@@ -35,8 +35,6 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-
-
 }
 /// Implement Delegate
 extension ViewController : biometricResponse{
@@ -44,9 +42,7 @@ extension ViewController : biometricResponse{
     func loginWithBiometric(_ error: String?, user: String, pass: String) {
         
        // Check if everything was correct, to get the credentials to use
-         
     }
-    
 }
 ```
 ## Usage without Buttons
@@ -60,21 +56,14 @@ class ViewController: UIViewController {
         
         biometric.configure(nil, labelTitle: nil)
         biometric.delegate = self
-
-	
-	
-	         
-        // Do any additional setup after loading the view.
+	// Do any additional setup after loading the view.
     }
 
     func loginWithTouch(){
 
 	/// Call this method when you want to try to login
-
 	biometric.login(nil)
-
     }
-
 }
 /// Implement Delegate
 extension ViewController : biometricResponse{
@@ -84,9 +73,7 @@ extension ViewController : biometricResponse{
        // Check if everything was correct, to get the credentials to use
          
     }
-    
 }
-
 ```
 /// This method must be used when the user has successfully logged in. It allows saving or modifying the previously saved user
 
@@ -100,7 +87,6 @@ func successLogin(){
 	 biometric.checkBiometricLogin('UserTosave', 'PasstoSave', controller: 	self)	{ [weak self](success) in }
 	 // Check if everything was correct, to save or editing credential and continue to next screen
 }
-
 ```
 Customization
 -----------
