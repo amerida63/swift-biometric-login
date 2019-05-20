@@ -1,4 +1,5 @@
-#SwiftBiometricLogin
+SwiftBiometricLogin
+-----------
 
 ## iOS Biometric Local Authentication using Swift
 Project that allows the easy implementation of the session start with touch ID in iOS.
@@ -104,7 +105,7 @@ func successLogin(){
 Customization
 -----------
 
-### Variables:
+#### Variables:
 
 You can change the text of the alerts in these cases:
 
@@ -117,7 +118,7 @@ You can change the text of the alerts in these cases:
 
 _**Note:** The variables to edit and save are always completed with the login method to be used.
 
-### Example:
+#### Example:
 
 ```
 "Can you change your credentials of TouchID" or "Next time, would you like log in faster with FaceID"
