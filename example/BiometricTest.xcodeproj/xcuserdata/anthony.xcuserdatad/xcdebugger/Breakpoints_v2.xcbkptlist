@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BiometricTest/TouchID/BiometricClass.swift"
+            timestampString = "579804299.4374501"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "login(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BiometricTest.BiometricClass.(login in _BC85AAA73D699EE8A7BAC1E80C7343FB)(__C.UIButton) -&gt; ()"
+                  moduleName = "BiometricTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anthony/Documents/wams/BiometricTest/BiometricTest/TouchID/BiometricClass.swift"
+                  timestampString = "579801174.860885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in BiometricTest.BiometricClass.(login in _BC85AAA73D699EE8A7BAC1E80C7343FB)(__C.UIButton) -&gt; ()"
+                  moduleName = "BiometricTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anthony/Documents/wams/BiometricTest/BiometricTest/TouchID/BiometricClass.swift"
+                  timestampString = "579801174.8630691"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
