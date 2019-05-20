@@ -118,7 +118,7 @@ MIT License.<br/>
 Credits
 ----------
 
-Razeware LLC 
+Razeware LLC </br>
 Created and maintained by Anthony Merida, © 2019.<br/>
 
 
