@@ -75,9 +75,10 @@ class ViewController: UIViewController {
     
     func succesLogin(){
         
-        biometric.checkBiometricLogin(Usertext!.text!, PasswordText!.text!, controller: self) { [weak self](succes) in
+        
+        biometric.checkBiometricLogin(Usertext!.text!, PasswordText!.text!, controller: self) { [weak self](success) in
             
-            if !succes{
+            if !success{
                 let alert = UIAlertController(title: "Error", message: "Unable to save the biometric login configuration", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                     

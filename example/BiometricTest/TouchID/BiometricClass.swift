@@ -86,13 +86,13 @@ class BiometricClass {
   private var activeTouchID : Bool = false
     
     
-    func configure(_ buttontouch: UIButton, labelTitle: UILabel){
+    func configure(_ buttontouch: UIButton?, labelTitle: UILabel?){
         
         buttonTouch = buttontouch
         labelTitles = labelTitle
         
-        buttontouch.isHidden = true
-        labelTitle.isHidden = true
+        buttontouch?.isHidden = true
+        labelTitle?.isHidden = true
         
         type = touchMe.biometricType()
         
@@ -109,11 +109,11 @@ class BiometricClass {
                 break
             }
             
-            buttontouch.isHidden = false
-            buttontouch.setImage(type == .faceID ? imageToFaceID : imageToTouchID,  for: .normal)
-            buttontouch.addTarget(self, action: #selector(login(_:)), for: .touchUpInside)
-            labelTitle.isHidden = false
-            labelTitle.text = type == .faceID ? "Use FaceID" : "Use TouchID"
+            buttontouch?.isHidden = false
+            buttontouch?.setImage(type == .faceID ? imageToFaceID : imageToTouchID,  for: .normal)
+            buttontouch?.addTarget(self, action: #selector(login(_:)), for: .touchUpInside)
+            labelTitle?.isHidden = false
+            labelTitle?.text = type == .faceID ? "Use FaceID" : "Use TouchID"
             break;
         }
     }
@@ -131,7 +131,7 @@ class BiometricClass {
 
     }
     
-    @objc private  func login(_ sender: UIButton){
+    @objc func login(_ sender: Any?){
         
         if !onlyBiometricAutenticate{
             
@@ -196,7 +196,7 @@ class BiometricClass {
        
     }
     
-    func checkBiometricLogin(_ username: String, _ password: String, controller : UIViewController, then: @escaping (_ succes: Bool)->()){
+    func checkBiometricLogin(_ username: String, _ password: String, controller : UIViewController, then: @escaping (_ success: Bool)->()){
         
         guard activeTouchID else{
             
@@ -239,7 +239,7 @@ class BiometricClass {
                     return
                 }
                 
-                 deleted = self.serviceBiometric(account: user, password: password, action: typeActionsKeychange.delete).succes
+                 deleted = self.serviceBiometric(account: user, password: password, action: typeActionsKeychange.delete).success
             }
             
             if edit && !deleted{
@@ -248,7 +248,7 @@ class BiometricClass {
                 return
             }
             
-            let save = self.serviceBiometric(account: username, password: password, action: typeActionsKeychange.save).succes
+            let save = self.serviceBiometric(account: username, password: password, action: typeActionsKeychange.save).success
             
             if save{
                 
@@ -271,7 +271,7 @@ class BiometricClass {
         
     }
 
-    private func serviceBiometric(account: String, password: String, action:typeActionsKeychange) -> (succes: Bool, password: String?){
+    private func serviceBiometric(account: String, password: String, action:typeActionsKeychange) -> (success: Bool, password: String?){
         
         guard account != "" else{ return (false, nil) }
         do {
